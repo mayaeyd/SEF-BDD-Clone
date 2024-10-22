@@ -17,8 +17,20 @@
     flex-grow: 1;
 }
 
-body{
-    background-color: rgb(219, 219, 219);
+.background-container{
+    background-image: url(./../images/bg-img-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    
+} 
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .flex{
@@ -60,7 +72,7 @@ body{
 }
 
 .navbar > div >ul >li:hover{
-    background-color: rgba(173, 172, 172, 0.291);
+    background-color: rgba(146, 146, 146, 0.291);
     border-radius: 3px;
     transition: all 0.5s;
 }
@@ -82,7 +94,7 @@ body{
 }
 
 .primary-btn:hover{
-    box-shadow: 3px 3px 6px 2px rgba(173, 172, 172, 0.552);
+    box-shadow: 3px 3px 6px 2px rgba(57, 57, 57, 0.552);
     transition: all 0.5s;
 }
 

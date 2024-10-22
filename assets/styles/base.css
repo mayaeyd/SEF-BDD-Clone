@@ -13,6 +13,10 @@
 
 /* @media */
 
+.flex-1{
+    flex-grow: 1;
+}
+
 body{
     background-color: rgb(219, 219, 219);
 }
@@ -38,19 +42,26 @@ body{
 }
 
 .navbar > div >ul{
-    
     list-style: none;
     font-size: medium;
-    gap: 20px;
+    justify-content: space-between;
     font-family: 'TheMix SemiBold';
-    margin-right: 20px;
+    margin-inline: 20px;
+    text-transform: uppercase;
+}
+
+.navbar > div > ul > li{
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    color: white;
 }
 
 .navbar > div >ul >li:hover{
     background-color: rgba(173, 172, 172, 0.291);
-    border-radius: 10px;
-    padding-inline: 10px;
-    padding-block: 3px;
+    border-radius: 3px;
     transition: all 0.5s;
 }
 
@@ -66,7 +77,13 @@ body{
     padding-block: 8px;
     font-family: 'TheMix SemiBold';
     letter-spacing: 1.5px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    box-shadow: 3px 3px 6px 2px rgba(173, 172, 172, 0.552);
+    transition: all 0.5s;
 }
 
 

@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: 'TheMix SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(./../fonts/TheMixSemiBold.otf);
+}
+
 body{
     background-color: rgb(219, 219, 219);
 }
@@ -21,7 +34,21 @@ body{
     gap: 20px;
 }
 
-.navbar >div >ul , .navbar > div> button {
+.navbar >div  {
     align-items: center;
     
 }
+
+.primary-btn{
+    border-radius: 30px;
+    background-color: #0078BE;
+    color: white;
+    padding-inline: 30px;
+    padding-block: 13px;
+    font-family: 'TheMix SemiBold';
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+
+

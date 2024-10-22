@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(219, 219, 219);
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.navbar{
+    justify-content: space-around;
+}
+
+.navbar > div >ul{
+    display: flex;
+    list-style: none;
+    font-size: medium;
+    gap: 20px;
+}
+
+.navbar >div >ul , .navbar > div> button {
+    align-items: center;
+    
+}

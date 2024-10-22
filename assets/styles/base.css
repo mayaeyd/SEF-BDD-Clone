@@ -11,6 +11,8 @@
     src: url(./../fonts/TheMixSemiBold.otf);
 }
 
+/* @media */
+
 body{
     background-color: rgb(219, 219, 219);
 }
@@ -23,28 +25,45 @@ body{
     flex-direction: column;
 }
 
-.navbar{
-    justify-content: space-around;
+.navbar >div {
+    flex-grow: 2;
+    justify-content: end; 
+    padding-right: 40px;
+}
+
+.navbar > a{
+    flex-grow: 1;
+    padding-top: 15px;
+    padding-left: 50px;
 }
 
 .navbar > div >ul{
-    display: flex;
+    
     list-style: none;
     font-size: medium;
     gap: 20px;
+    font-family: 'TheMix SemiBold';
+    margin-right: 20px;
+}
+
+.navbar > div >ul >li:hover{
+    background-color: rgba(173, 172, 172, 0.291);
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 3px;
+    transition: all 0.5s;
 }
 
 .navbar >div  {
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .primary-btn{
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: #0078BE;
     color: white;
     padding-inline: 30px;
-    padding-block: 13px;
+    padding-block: 8px;
     font-family: 'TheMix SemiBold';
     letter-spacing: 1.5px;
     text-transform: capitalize;

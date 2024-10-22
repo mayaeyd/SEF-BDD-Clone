@@ -20,6 +20,10 @@
 
 /* @media */
 
+body{
+    background-color: #F5F5F5;
+}
+
 .flex-1{
     flex-grow: 1;
 }
@@ -107,7 +111,7 @@
 
 .slogan-container {
     font-family: 'TheMix Black';
-    font-size: 3.5vw;
+    font-size: 3.4vw;
     width: 70%;
     text-transform: uppercase;
     text-align: center;
@@ -116,6 +120,15 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -55%);  
+}
+
+.subtitle{
+    font-family: 'TheMix Black';
+    text-transform: uppercase;
+    color:#212121;
+    text-align: center;
+    font-size: 2rem;
+    margin-block: 20px;
 }
 
 

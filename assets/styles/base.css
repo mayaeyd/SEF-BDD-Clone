@@ -215,12 +215,15 @@ body{
     background-color: #06deb61f;
 }
 
-.drone-view-img{
+.drone-view-img, .bddbldg-img{
     width: 100%;
     height: 70vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.drone-view-img{
     background-image: url(./../images/BDD-drone-view.jpg);
 }
 
@@ -333,10 +336,72 @@ body{
 .stores-div{
     width: 40%;
     gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+.bddbldg-img{
+    background-image: url(./../images/bddbg.jpg);
+}
+
+.bddbldg-img > div > h3{
+    font-family: 'TheMix Black';
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #212121;  
+    margin-block: 20px; 
+}
+
+.achieve-div{
+    margin-block: 40px;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.achieve-div > div {
+    flex: 1;
+    text-align: center;
+}
+
+.achieve-div > div > .card-title{
+    font-size: 16px !important;
+    letter-spacing: 1.5px !important;
+}
+
+.achieve-div > div > h3{
+        font-family: "Londrina Sketch", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 35px;
+}
+
+.ach-1{
+    color: #009A9E;;
+}
+
+.ach-2{
+    color: #E13870;
+}
+
+.ach-3{
+    color: #0078BE;
+}
+
+.ach-4{
+    color: #00802D;
 }
 
 @media screen and (max-width: 770px){
     .stores-div{
         flex-direction: column;
+    }
+
+    .achieve-div{
+        flex-direction: column;
+    }
+
+    .bddbldg-img{
+        height: auto;
     }
 }

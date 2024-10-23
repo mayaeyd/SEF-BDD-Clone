@@ -195,6 +195,10 @@ body{
     color: white;    
 }
 
+.drone-view-img > div> video{
+    cursor: pointer;
+}
+
 .drone-view-img > div > h3, .drone-view-img > div > video {
     z-index: 2;
 }

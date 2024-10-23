@@ -135,8 +135,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
-    width: 100%;
-    
+    margin-bottom: 5%;
 }
 
 
@@ -147,8 +146,16 @@ body{
    border-radius: 10px;
    height: auto;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   
+   text-align: center;
+   padding-top: 30px;
 }
-  
+
+.card > div> h3{
+    font-family: 'TheMix Black';
+}
+
+.card > div > p{
+    font-family: 'TheMix SemiBold';
+}
 
 

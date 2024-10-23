@@ -58,6 +58,10 @@ body{
     
 } 
 
+.burger-button{
+    display: none;
+}
+
 .navbar{
     width: 100%;
     position: absolute;
@@ -587,3 +591,18 @@ footer{
     }
 }
 
+@media screen and (max-width:900px){
+    .navbar-links{
+        display: none;
+    }
+    .burger-button{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .burger-button >svg{
+        margin-right: 20px;
+        border: solid 2px #212121;
+        cursor: pointer;
+    }
+}

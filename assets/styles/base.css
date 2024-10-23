@@ -322,9 +322,21 @@ body{
     }
 }
 
-/* @media (max-width: 800px) {
-    .com-card {
-      flex: 1 1 100%; 
-    }
- } */
+.download-app-div > p{
+    color: #7A7A7A;
+    font-family: 'TheMix Black';
+    font-size: 16px;
+    margin: 15px;
+    text-align: center;
+}
 
+.stores-div{
+    width: 40%;
+    gap: 10px;
+}
+
+@media screen and (max-width: 770px){
+    .stores-div{
+        flex-direction: column;
+    }
+}

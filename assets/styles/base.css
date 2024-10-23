@@ -120,7 +120,7 @@ body{
 
 .slogan-container {
     font-family: 'TheMix Black';
-    font-size: 3.4vw;
+    font-size: 35px;
     width: 70%;
     text-transform: uppercase;
     text-align: center;
@@ -178,13 +178,13 @@ body{
     
 }
 
-.card > div> h3{
+.card-title{
     font-family: 'TheMix Black';
     color: #212121;
     text-transform: uppercase;
 }
 
-.card > div > p{
+.card-desc{
     font-family: 'TheMix SemiBold';
     color: #7A7A7A;
 }

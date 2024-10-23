@@ -405,3 +405,21 @@ body{
         height: auto;
     }
 }
+
+.trending-cards-con{
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    padding-inline: 50px;
+    gap: 20px;
+}
+
+.trending-cards-con > div{
+    width: 20%;
+}
+
+
+.trending-cards-con > div > img{
+    width: 100%;
+}

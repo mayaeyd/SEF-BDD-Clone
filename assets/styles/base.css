@@ -41,6 +41,10 @@ body{
     flex-grow: 1;
 }
 
+.flex-2{
+    flex: 2;
+}
+
 .background-container{
     background-image: url(./../images/bg-img-1.jpg);
     background-size: auto;
@@ -137,6 +141,7 @@ body{
 }
 
 .cards-container{
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
@@ -145,7 +150,7 @@ body{
 }
   
 .card {
-   flex: 1 1 150px;
+   flex: 1 1 ;
    background-color: white;
    border-radius: 10px;
    height: auto;
@@ -153,6 +158,19 @@ body{
    text-align: center;
    padding: 30px;
    cursor: pointer;
+   box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+   .card {
+     flex: calc(33.33% - 40px); 
+   }
+}
+ 
+@media (max-width: 800px) {
+   .card {
+     flex: 1 1 100%; 
+   }
 }
 
 .card > div > img{

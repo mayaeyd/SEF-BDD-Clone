@@ -161,6 +161,7 @@ body{
    box-sizing: border-box;
 }
 
+
 @media (max-width: 1080px) {
    .card {
      flex: calc(33.33% - 40px); 
@@ -181,6 +182,7 @@ body{
 .card-title{
     font-family: 'TheMix Black';
     color: #212121;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -244,9 +246,79 @@ body{
     z-index: 2;
 }
 
+
+.com-cards-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.tri-img-container{
+    background-image: url(./../images/tri-img.png);
+    flex: 2;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.com-card{
+    box-sizing: border-box;
+    flex: 1 1 10px;
+    border-radius: 10px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: white;
+    position: relative;
+}
+
+.com-card > div{
+    width: 60%;
+}
+
+.com-card > div > h3{
+    text-align: start;
+    line-height: 110%;
+    margin-block: 20px;
+    margin-left: 15%;
+}
+
+.com-card > div> ul{
+    list-style-image: url(./../images/bullet.gif);
+    margin-bottom: 40px; 
+    margin-left: 30%;
+    text-align: start;
+}
+
+.com-card> button{
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+
+
 @media (max-width: 1022px) {
     .tri-img-container{
         display: none;
     }
 }
+
+@media screen and (max-width:1021px){
+    .com-card{
+        flex:1 1 50%;
+    }
+}
+
+/* @media (max-width: 800px) {
+    .com-card {
+      flex: 1 1 100%; 
+    }
+ } */
 

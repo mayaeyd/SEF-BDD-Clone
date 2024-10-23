@@ -24,6 +24,19 @@ body{
     background-color: #F5F5F5;
 }
 
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-1{
     flex-grow: 1;
 }
@@ -41,14 +54,6 @@ body{
     width: 100%;
     position: absolute;
     z-index: 1;
-}
-
-.flex{
-    display: flex;
-}
-
-.column{
-    flex-direction: column;
 }
 
 .navbar >div {
@@ -174,8 +179,6 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-image: url(./../images/BDD-drone-view.jpg);
-    justify-content: center;
-    align-items: center;
 }
 
 .opacity{
@@ -185,14 +188,14 @@ body{
     height: 100%;
 }
 
-.drone-view-img > h3{
+.drone-view-img >div> h3{
     font-family: 'TheMix Black';
     font-size: 32px;
     text-transform: uppercase;
     color: white;    
 }
 
-.drone-view-img > h3, .drone-view-img > video {
+.drone-view-img > div > h3, .drone-view-img > div > video {
     z-index: 2;
 }
 

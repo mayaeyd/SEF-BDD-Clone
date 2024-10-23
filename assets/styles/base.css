@@ -417,9 +417,46 @@ body{
 
 .trending-cards-con > div{
     width: 20%;
+    background-color: white;
+    border-radius: 10px;
+
 }
 
 
 .trending-cards-con > div > img{
     width: 100%;
+}
+
+.trending-cards-desc{
+    margin: 20px;
+}
+
+.trending-cards-desc > .card-title{
+    font-size: 18px !important;
+}
+
+.divider{
+    border-bottom: solid 1px #7A7A7A;
+    margin-top: 20px;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+@media screen and (max-width: 1025px) {
+    .trending-cards-con{
+        flex-direction: column;
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .trending-img2 , .trending-img3{
+        display: none;
+    }
+    .trending-cards-con > div {
+        width: 100%;
+    }
 }

@@ -45,6 +45,10 @@ body{
     flex: 2;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .background-container{
     background-image: url(./../images/bg-img-1.jpg);
     background-size: auto;
@@ -276,6 +280,7 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 30px;
     background-color: white;
+    background-image: url(./../images/bg-icon.png);
     position: relative;
     margin-left: 20px;
     transition: transform ease 0.3s;
@@ -311,6 +316,7 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.321);
     transform: translateY(-10px);
 }
+
 
 
 @media (max-width: 1022px) {
@@ -512,13 +518,45 @@ footer{
 
 .footer-container{
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
 }
 
 .footer-container > div > ul{
-    margin-left: 10px;
+    margin-left: 15px;
     list-style-type: none;
+}
+
+.themix-semibold{
+    font-family: 'TheMix SemiBold';
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.footer-subtitle{
+    font-family: 'TheMix Black';
+    color: #7A7A7A;
+}
+
+.underline{
+    text-decoration: none;
+    text-decoration-color: rgba(85, 85, 230, 0.721) ;
+}
+
+.underline:hover{
+    transition: all ease 0.5s;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color:  rgba(85, 85, 230, 0.721) ;
+    text-decoration-thickness: 2px ;
 }
 
 @media screen and (max-width: 1025px) {
@@ -539,3 +577,13 @@ footer{
         margin-bottom: 50px;
     }
 }
+
+@media screen and (max-width: 800px){
+    .footer-container{
+        flex-direction: column;
+    }
+    footer{
+        height: auto;
+    }
+}
+

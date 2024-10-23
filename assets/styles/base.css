@@ -460,3 +460,21 @@ body{
         width: 100%;
     }
 }
+
+.community-message-div{
+    height: 40vw;
+    background-color: white;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    padding-inline: 50px;
+}
+
+
+.community-message-div > div{
+    width: 20%;
+}
+.community-message-div > div > img{
+    width: 100%;
+}

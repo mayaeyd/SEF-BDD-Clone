@@ -274,10 +274,12 @@ body{
     padding: 30px;
     background-color: white;
     position: relative;
+    margin-left: 20px;
+    transition: transform ease 0.3s;
 }
 
 .com-card > div{
-    width: 60%;
+    width: 80%;
 }
 
 .com-card > div > h3{
@@ -302,6 +304,10 @@ body{
     bottom: 10px;
 }
 
+.com-card:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.321);
+    transform: translateY(-10px);
+}
 
 
 @media (max-width: 1022px) {
